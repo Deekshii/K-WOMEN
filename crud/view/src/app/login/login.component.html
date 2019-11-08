@@ -1,0 +1,35 @@
+<!-- <form class="form" [formGroup]="loginForm"  (ngSubmit)="login()"  > 
+<div class="form-group">
+        <label for="tourname">User ID</label>
+        <input type="text" formControlName="user_id" name="user_id" [(ngModel)]="stud.user_id" class="form-control" ></div>
+        <div class="form-group">
+            <label for="tourname">Password</label>
+            <input type="password" formControlName="password" name="password" [(ngModel)]="stud.password" class="form-control" ></div>
+
+               
+            <button type="submit" (click)="login()" class="btn btn-default">Login</button>
+        </form>
+
+
+
+         -->
+
+
+         <form (ngSubmit)="login()">
+
+                <div class="form-group">
+                        <label >Email</label>
+                        <input type="email" name="email"  class="form-control" ></div>
+                            <div class="form-group">
+                                <label >Password</label>
+                                <input type="password" name="password"  class="form-control" ></div>
+                                
+                   <button type="submit" class="btn btn-success">Submit</button>
+            
+            </form>
+
+
+            
+                
+                
+                        
