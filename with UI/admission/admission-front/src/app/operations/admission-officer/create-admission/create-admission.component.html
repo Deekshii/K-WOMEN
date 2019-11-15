@@ -1,0 +1,32 @@
+<form (ngSubmit)="create()">
+
+                           
+  <br>
+  <br>
+   <div class="form-group">
+          <label >Student Name</label>
+          <input type="string" name="studentname" [(ngModel)]="stud.studentname" class="form-control" ></div>
+          <div class="form-group">
+              <label>Father Name</label>
+              <input type="string" name="fathername" [(ngModel)]="stud.fathername" class="form-control" ></div>
+              <div class="form-group">
+                  <label >Mother Name</label>
+                  <input type="string" name="mothername" [(ngModel)]="stud.mothername" class="form-control" ></div>
+  <div class="form-group">
+
+    <label > Student 10th details</label>
+    <input type="string" name=" student10thdetails" [(ngModel)]="stud.student10thdetails" class="form-control" ></div>
+    <div class="form-group">
+          <label >Student Intermediate details</label>
+          <input type="string" name="studentintermediatedetails" [(ngModel)]="stud.studentintermediatedetails" class="form-control" ></div>
+    <div class="form-group"> 
+          <div class="form-group">
+                  <label >DateOfBirth</label>
+                  <input type="date" name="dateofbirth" [(ngModel)]="stud.dateofbirth" class="form-control" ></div>
+              <label >Joining Branch</label>
+              <input type="string" name="joiningbranch" [(ngModel)]="stud.joiningbranch" class="form-control" ></div>
+   
+                
+     <button type="submit" class="btn btn-success">Submit</button>
+
+</form>

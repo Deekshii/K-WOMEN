@@ -1,0 +1,41 @@
+<form (ngSubmit)="create()">
+
+             
+  <br>
+  <br>
+   <div class="form-group">
+          <label >Student Name</label>
+          <input type="string" name="studentname" [(ngModel)]="stud.studentname" class="form-control" >
+      </div>
+          <div class="form-group">
+              <label>student class</label>
+              <input type="string" name="studentclass" [(ngModel)]="stud.studentclass" class="form-control" >
+          </div>
+              <div class="form-group">
+                  <label >student branch</label>
+                  <input type="string" name="studentbranch" [(ngModel)]="stud.studentbranch" class="form-control" >
+              </div>
+  <div class="form-group">
+
+    <label>student sections</label>
+    <input type="string" name=" studentsection" [(ngModel)]="stud.studentsection" class="form-control" >
+  </div>
+    <div class="form-group">
+          <label >student id</label>
+          <input type="number" name="studentid" [(ngModel)]="stud.studentid" class="form-control" >
+      </div>
+  
+          <div class="form-group">
+                  <label >Student academic Percentage</label>
+                  <input type="number" name="studentacademicpercentage" [(ngModel)]="stud.studentacademicpercentage" class="form-control" >
+              </div>
+              
+
+              <div class="form-group">
+                  <label >Exams Time Table</label>
+                  <input type="string" name="examstimetable" [(ngModel)]="stud.examstimetable" class="form-control" >
+              </div>
+                
+     <button type="submit" class="btn btn-success">Submit</button>
+
+</form> 

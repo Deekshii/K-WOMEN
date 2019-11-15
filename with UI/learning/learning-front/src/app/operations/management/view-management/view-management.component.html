@@ -1,0 +1,44 @@
+<table style="border:1px solid;text-align:center">
+  <thead>
+  <tr>
+  <!-- <th>Id </th> -->
+  <th> Student Name</th>
+  <th> Father Name</th>
+  <th> Student Id</th> 
+  <th>Student Class</th>
+  <th>Student Branch</th>
+  <th>Student Section</th>
+  <th>Student Academic Percentage</th>
+  <th>Student Fee Details</th>
+
+
+  
+
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let data of stud;let $index  = index">
+  <td><input [(ngModel)]="data. studentname" [disabled]='$index !== expandedIndex'value= {{data.studentname}}></td>
+  <td><input [(ngModel)]="data. fathername" [disabled]='$index !== expandedIndex'value= {{data.fathername}}></td>
+  <td><input [(ngModel)]="data.studentid" [disabled]='$index !== expandedIndex'value= {{data.studentid}}></td>
+  <td><input [(ngModel)]="data. studentclass" [disabled]='$index !== expandedIndex'value= {{data.studentclass}}></td>
+  <td><input [(ngModel)]="data.studentbranch" [disabled]='$index !== expandedIndex' value={{data.studentbranch}}></td>
+  <td><input [(ngModel)]="data. studentsection" [disabled]='$index !== expandedIndex' value={{data.studentsection}}></td>
+  <td><input [(ngModel)]="data.studentacademicpercentage" [disabled]='$index !== expandedIndex' value={{data.studentacademicpercentage}></td>
+  <td><input [(ngModel)]="data.studentfeedetails" [disabled]='$index !== expandedIndex' value={{data.studentfeedetails}></td>
+
+  
+  <td> <button (click)="edit(data,$index)">edit</button></td>
+  <td><button (click)="delete(data)">Delete</button></td>
+  <td><button (click)="save(data)">save</button></td> 
+  </tr>
+  
+  </tbody> 
+  </table>
+  
+  <div style="margin-left:1200px;">
+    <!-- <td colspan="2" class="text-center"> -->
+      <input type="button" (click)="onLogout()" value="Logout" />
+    <!-- </td> -->
+    </div>

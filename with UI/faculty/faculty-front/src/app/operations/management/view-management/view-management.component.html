@@ -1,0 +1,48 @@
+<table style="border:1px solid;text-align:center">
+  <thead>
+  <tr>
+  <!-- <th>Id </th> -->
+  <th>Email</th>
+  <th>Phone Number</th>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>DateOfBirth</th>
+  <th>Address</th>
+  <th>Age </th>
+  <th>SpecializedIn</th>
+  <th>Department</th>
+  <th>DateOfJoining</th>
+  <th>Gender</th>
+  <th>CollegeName</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let data of stud;let $index  = index">
+  <td><input [(ngModel)]="data.email" [disabled]='$index !== expandedIndex'value= {{data.email}}></td>
+  <td><input [(ngModel)]="data.phonenumber" [disabled]='$index !== expandedIndex'value= {{data.phonenumber}}></td>
+  <td><input [(ngModel)]="data.firstname" [disabled]='$index !== expandedIndex' value={{data.firstname}}></td>
+  <td><input [(ngModel)]="data.lastname" [disabled]='$index !== expandedIndex' value={{data.lastname}}></td>
+  <td><input [(ngModel)]="data.dateofbirth" [disabled]='$index !== expandedIndex'value= {{data.dateofbirth}}></td>
+  <td><input [(ngModel)]="data.address" [disabled]='$index !== expandedIndex' value={{data.address}></td>
+  <td><input [(ngModel)]="data.age" [disabled]='$index !== expandedIndex' value={{data.age}}></td>
+  <td><input [(ngModel)]="data.speciliazedin" [disabled]='$index !== expandedIndex' value={{data.speciliazedin}}></td>
+  <td><input [(ngModel)]="data.department" [disabled]='$index !== expandedIndex' value={{data.department}}></td>
+  <td><input [(ngModel)]="data.dateofjoining" [disabled]='$index !== expandedIndex'value= {{data.dateofjoining}}></td>
+  <td><input [(ngModel)]="data.gender" [disabled]='$index !== expandedIndex' value={{data.gender}}></td>
+  <td><input [(ngModel)]="data.collegename" [disabled]='$index !== expandedIndex' value={{data.collegename}}></td>
+  <td> <button (click)="edit(data,$index)">edit</button></td>
+  <td><button (click)="delete(data)">Delete</button></td>
+  <td><button (click)="save(data)">save</button></td>
+  </tr>
+  
+  </tbody>
+  </table>
+
+
+  
+  
+  <div style="margin-left:1200px;">
+    <!-- <td colspan="2" class="text-center"> -->
+      <input type="button" (click)="onLogout()" value="Logout" />
+    <!-- </td> -->
+    </div>

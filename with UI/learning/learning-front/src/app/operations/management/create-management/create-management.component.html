@@ -1,0 +1,48 @@
+<form (ngSubmit)="create()">
+
+                           
+    <br>
+    <br>
+     <div class="form-group">
+            <label for="tourname">Student Name</label>
+            <input type="string" name="studentname" [(ngModel)]="stud.studentname" class="form-control" >
+        </div>
+
+        <div class="form-group">
+            <label for="tourname">Father Name</label>
+            <input type="string" name="fathername" [(ngModel)]="stud.fathername" class="form-control" >
+        </div>
+
+        <div class="form-group">
+            <label for="tourname">student id</label>
+            <input type="number" name="studentid" [(ngModel)]="stud.studentid" class="form-control" >
+        </div>
+
+            <div class="form-group">
+                <label for="tourname">student class</label>
+                <input type="string" name="studentclass" [(ngModel)]="stud.studentclass" class="form-control" >
+            </div>
+                <div class="form-group">
+                    <label for="tourname">student branch</label>
+                    <input type="string" name="studentbranch" [(ngModel)]="stud.studentbranch" class="form-control" >
+                </div>
+    <div class="form-group">
+
+      <label for="tourname">student sections</label>
+      <input type="string" name=" studentsection" [(ngModel)]="stud.studentsection" class="form-control" >
+    </div>
+      
+            <div class="form-group">
+                    <label for="price">Student academic Percentage</label>
+                    <input type="number" name="studentacademicpercentage" [(ngModel)]="stud.studentacademicpercentage" class="form-control" >
+                </div>
+
+                <div class="form-group">
+                    <label for="tourname">student Fee details</label>
+                    <input type="string" name="studentfeedetails" [(ngModel)]="stud.studentfeedetails" class="form-control" >
+                </div>
+                
+                  
+       <button type="submit" class="btn btn-success">Submit</button>
+
+</form> 
