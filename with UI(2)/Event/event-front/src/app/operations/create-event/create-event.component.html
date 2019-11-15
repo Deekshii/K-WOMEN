@@ -1,0 +1,28 @@
+<form (ngSubmit)="create()">                         
+  <br>
+  <br>
+  <div class="form-group">
+  <label >Event Name</label>
+  <input type="string" name="eventname" [(ngModel)]="stud.eventname" class="form-control" ></div>
+<div class="form-group">
+    <label>Event Date</label>
+    <input type="date" name="eventdate" [(ngModel)]="stud.eventdate" class="form-control" ></div>
+   <div class="form-group">
+          <label>Location</label>
+          <input type="string" name="location" [(ngModel)]="stud.location" class="form-control" ></div>  
+    <div class="form-group">
+                      <label for="tourname">Description</label>
+                       <input type="string" name="description" [(ngModel)]="stud.description" class="form-control" ></div>            
+     <button type="submit" class="btn btn-success">Submit</button>
+</form>
+
+  
+  
+<div style="margin-left:1200px;">
+  <!-- <td colspan="2" class="text-center"> -->
+    <input type="button" (click)="onLogout()" value="Logout" />
+  <!-- </td> -->
+  </div>
+
+
+
